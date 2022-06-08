@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from .forms import ProductoForm,UserForm
 from .models import Producto
+from django.core.paginator import Paginator
 # Create your views here.
 
 def home (request):
@@ -54,10 +55,18 @@ def Inicio(request):
     return render(request, 'core/Inicio.html')
 
 def Catalogo(request):
-    return render(request, 'core/CatalogoBase.html')
+
+    producto  = Producto.objects.all()
+    datos = {'producto': producto}
+
+    return render(request, 'core/CatalogoBase.html',datos)
 
 def producto(request):
     return render(request, 'core/Producto.html')
+
+
+def paginacion(request):
+    return render (request,'core/CatalogoBase2.html')
 
 
 
