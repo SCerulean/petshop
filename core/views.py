@@ -4,6 +4,11 @@ from .models import Producto
 from django.core.paginator import Paginator
 # Create your views here.
 
+class ProductoViewset(viewsets.ModelViewSet):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer 
+
+
 def home (request):
     producto  = Producto.objects.all()
     datos = {'producto': producto}
@@ -61,7 +66,7 @@ def Catalogo(request):
 
     return render(request, 'core/CatalogoBase.html',datos)
 
-def producto(request):
+def productos(request):
     return render(request, 'core/Producto.html')
 
 
