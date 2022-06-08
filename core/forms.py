@@ -11,7 +11,7 @@ class ProductoForm (ModelForm):
 
         
 class UserForm (ModelForm):
-
+    nombre = forms.CharField(label="nombre",widget=forms.TextInput(attrs={"placeholder": "escribe tu nombre"}))
     class Meta :
         model = Users
         fields= ['nombre','contraseña','email',]
