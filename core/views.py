@@ -50,4 +50,14 @@ def registerUser(request):
             
     return render(request, 'core/Formulario.html', datos)
 
+def Inicio(request):
+    return render(request, 'core/Inicio.html')
+
+def Catalogo(request):
+    return render(request, 'core/CatalogoBase.html')
+
+def producto(request):
+    return render(request, 'core/Producto.html')
+
+
 
