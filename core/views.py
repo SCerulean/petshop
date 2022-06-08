@@ -63,7 +63,7 @@ def Inicio(request):
 def Catalogo(request):
     return render(request, 'core/CatalogoBase.html')
 
-def producto(request):
+def productos(request):
     return render(request, 'core/Producto.html')
 
 

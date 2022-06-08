@@ -56,12 +56,15 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
         <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+            <img src="https://i.pinimg.com/564x/41/ef/5e/41ef5e28832e5e65ecc6e3203c8008ee.jpg" class="img-fluid rounded-start" alt="...">
         </div>
     <div class="col-md-8">
         <div class="card-body">
-            <h5 class="card-title">  </h5>
-            <p class="card-text">  </p>
+            <h5 class="card-title"> Bandana Arcoiris </h5>
+          {% for ve in producto %}
+            <p class="card-text"><li>{{ve.SKU}}</li><li>{{ve.marca}}</li><li>{{ve.precio}}</li>
+            <li>{{ve.stock}}</li><li>{{ve.categoria}}</li>
+          {% endfor %}
         </div>
     </div>
     </div>
