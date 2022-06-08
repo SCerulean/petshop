@@ -1,0 +1,22 @@
+p{
+    text-align: center;
+    font-size: large;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline rgb(83, 136, 133);
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(-10deg, rgb(83, 136, 133) 50%, white 50%);
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
