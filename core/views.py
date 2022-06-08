@@ -4,9 +4,9 @@ from .models import Producto
 from django.core.paginator import Paginator
 # Create your views here.
 
-class ProductoViewset(viewsets.ModelViewSet):
-    queryset = Producto.objects.all()
-    serializer_class = ProductoSerializer 
+#--class ProductoViewset(viewsets.ModelViewSet):
+    #--queryset = Producto.objects.all()
+    #--serializer_class = ProductoSerializer 
 
 
 def home (request):
